@@ -1,6 +1,7 @@
 import './App.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import  './ConfigureAmplify'
 import Navbar from './Component/Navbar';
 import Home from './Page/Home';
 import CreateBlog from './Page/CreateBlog';
@@ -15,10 +16,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/createPost" element={<CreateBlog/>}/>
+        <Route path="/createBlog" element={<CreateBlog/>}/>
         <Route path="/Profile" element={<Profile/>}/>
-        <Route path="/post" element={<MyBlogs/>}/>
-        <Route path="/post/:id" element={<Id/>}/>
+        <Route path="/blog" element={<MyBlogs/>}/>
+        <Route path="/blog/:id" element={<Id/>}/>
       </Routes>
     </div>
   );

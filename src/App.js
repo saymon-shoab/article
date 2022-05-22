@@ -8,6 +8,7 @@ import CreateBlog from './Page/CreateBlog';
 import Profile from './Page/Profile';
 import MyBlogs from './Page/MyBlogs';
 import Id from './Page/Id';
+import EditPost from './Page/EditPost';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Profile" element={<Profile/>}/>
         <Route path="/blog" element={<MyBlogs/>}/>
         <Route path="/blog/:id" element={<Id/>}/>
+        <Route path="/edit-post/:id" element={<EditPost/>}/>
       </Routes>
     </div>
   );
